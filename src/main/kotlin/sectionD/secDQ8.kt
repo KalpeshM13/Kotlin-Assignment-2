@@ -4,14 +4,26 @@ package org.example.sectionD
 
 interface Playable {
     fun play() {
-
+        println("Playing Sport")
     }
 }
 
-class Cricket {
-
+class Cricket: Playable {
+    override fun play() {
+        println("Playing Cricket")
+    }
 }
 
-class Football {
+class Football: Playable {
+    override fun play() {
+        println("Playing Football")
+    }
+}
 
+fun main() {
+    val cricket = Cricket()
+    val football = Football()
+    cricket.play()
+    football.play()
+    
 }

@@ -15,12 +15,12 @@ The project is organized into packages, with each package representing a section
 src/
 └── main/
     └── kotlin/
+        ├── miniAssignment/
         ├── sectionA/
         ├── sectionB/
         ├── sectionC/
         ├── sectionD/
-        ├── sectionE/
-        └── miniAssignment/
+        └── sectionE/
 ```
 
 ## Sections Covered

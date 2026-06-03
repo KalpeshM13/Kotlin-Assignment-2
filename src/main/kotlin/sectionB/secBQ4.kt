@@ -20,7 +20,7 @@ class BankAccount {
             println("Withdrawing Rs.$amount")
             balance -= amount
         } else {
-            println("Withdrawing Amount must be greater than $balance")
+            println("Withdrawing Amount must be smaller than $balance")
         }
     }
 
@@ -31,8 +31,8 @@ class BankAccount {
 
 fun main() {
     val SBI = BankAccount()
-    SBI.deposit(50000.0)
+    SBI.deposit(10000.0)
     SBI.getBalance()
-    SBI.withdraw(10000.0)
+    SBI.withdraw(50000.0)
     SBI.getBalance()
 }

@@ -21,7 +21,12 @@ class Rectangle(private var length: Double, private var breadth: Double): Shape(
 }
 
 fun main() {
-    val shapes = listOf<Shape>(Rectangle(20.0,8.0), Rectangle(3.0,8.0), Circle(3.0), Circle(5.0))
+    val shapes = listOf<Shape>(
+        Rectangle(20.0,8.0),
+        Rectangle(3.0,8.0),
+        Circle(3.0),
+        Circle(5.0)
+    )
 
     for (shape in shapes) {
         println("Area: ${shape.area()}")

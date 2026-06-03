@@ -13,14 +13,13 @@ class Library {
     }
 
     fun removeBook(bookId: Int) {
-        for(book in books) {
-            if(book.bookId == bookId) {
-                books.remove(book)
-                bookFound = true
-            }
-        }
-        if(!bookFound) {
-            println("\nBook Not Found")
+        val book = books.find { it.bookId == bookId }
+
+        if (book != null) {
+            books.remove(book)
+            println("Book removed successfully.")
+        } else {
+            println("Book not found.")
         }
     }
 
@@ -47,7 +46,7 @@ fun main() {
 
     library.showBooks()
 
-    library.removeBook(4)
+    library.removeBook(1)
 
     library.showBooks()
 }
